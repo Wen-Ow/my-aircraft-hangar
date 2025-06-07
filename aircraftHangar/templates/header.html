@@ -1,1 +1,17 @@
-<h1>Navbar</h1>
+<nav class="navbar">
+  <div class="logo">
+    <a href="{% url 'home' %}">My Aircraft Hangar</a>
+  </div>
+  <ul class="nav-items">
+    {% if user.is_authenticated %}
+    <li class="nav-item"><a href="{% url 'logout' %}">Logout</a></li>
+    {% else %}
+    <li class="nav-item {% if request.path == '/accounts/register/' %}active{% endif %}">
+      <a href="{% url 'register' %}">Register</a>
+    </li>
+    <li class="nav-item {% if request.path == '/accounts/login/' %}active{% endif %}">
+      <a href="{% url 'login' %}">Login</a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>

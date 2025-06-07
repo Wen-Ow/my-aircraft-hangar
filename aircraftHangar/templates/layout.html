@@ -5,8 +5,14 @@
   <head>
     <title>My Aircraft Hangar</title>
     <link rel="stylesheet" href="{% static 'main_app/styles.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    {% include 'header.html' %} {% block content %}{% endblock %} {% include 'footer.html' %}
+    <div class="container">{% include 'header.html' %} {% block content %}{% endblock %}</div>
   </body>
 </html>
