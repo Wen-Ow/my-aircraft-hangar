@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.container {
+  padding: 0 1.5rem;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Navbar Styling */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-item a {
+  padding: 0.5rem 0.75rem;
+  border-radius: 1.5rem;
+}
+
+.nav-item.active a {
+  background-color: white;
+  border: 1px solid white;
+  color: #651fff;
+}
+
+/* Colors */
+.text-light {
+  color: #ffffff;
+}
+
+/* Margins */
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Layouts */
+.flex {
+  display: flex;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+/* Forms Styling */
+.form-container {
+  background-color: rgba(0, 0, 0, 0.8);
+
+  margin-top: 2rem;
+  border-radius: 2rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  min-height: 60vh;
+}
+
+.form-content {
+  background: #fc466b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fc466b, #3f5efb); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fc466b,
+    #3f5efb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 1rem;
+  border-radius: 2rem;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  padding: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  padding: 0.75rem;
+  width: 100%;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 0.25rem;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #00bcd4;
+}
+.btn {
+  padding: 0.5rem 0.75rem;
+  border-radius: 1.5rem;
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: #651fff;
+  color: white;
+  border: 1px solid #651fff;
+}
