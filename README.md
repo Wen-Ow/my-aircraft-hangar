@@ -22,6 +22,7 @@ The app’s purpose is to provide a lightweight, user-friendly tool for organizi
 - [Technologies Used](#technologiesused)
 - [Features](#features)
 - [Design](#design)
+- [Project User Stories](#userstories)
 - [Project Next Steps](#nextsteps)
 - [About the Author](#author)
 - [Works Cited](#workscited)
@@ -38,21 +39,46 @@ The app’s purpose is to provide a lightweight, user-friendly tool for organizi
 
 - Notable design details including what inspired the design.
 
+## <a name="features"></a>Features
+
+-
+-
+-
+-
+-
+
+## <a name="userstories"></a>Project User Stories
+
+- As a user, I want to register for an account so that I can manage my own aircraft collection.
+- As a user, I want to log in and log out securely so that I can access my personal hangar.
+- As a user, I want to only access and manage my own aircraft so that my data remains private and secure.
+- As a user, I want to create a new aircraft entry so that I can add it to my collection.
+- As a user, I want to view a list of all my aircraft so that I can see my entire collection at a glance.
+- As a user, I want to view detailed information about a specific aircraft so that I can review its specs and condition.
+- As a user, I want to edit an existing aircraft entry using a pre-filled form so that I can easily update its information.
+- As a user, I want to delete an aircraft from my collection so that I can keep my hangar up to date.
+
 ## <a name="nextsteps"></a>Project Next Steps
 
+-
+-
 -
 -
 -
 
 ## <a name="author"></a>About The Authors
 
-- Name, role: [LinkedIn](add link)
+- Name: Wen Ow
+- Role: Full-Stack Developer & UX Designer
+- LinkedIn: [LinkedIn](add link)
 
 ## <a name="workscited"></a>Works Cited:
 
-- **[enter name of method/theory/etc](link)**: Description of how this resource was utilized.
-- **[enter name of method/theory/etc](link)**: Description of how this resource was utilized.
-- **[enter name of method/theory/etc](link)**: Description of how this resource was utilized.
-- **[enter name of method/theory/etc](link)**: Description of how this resource was utilized.
-- **[enter name of method/theory/etc](link)**: Description of how this resource was utilized.
-- **[enter name of method/theory/etc](link)**: Description of how this resource was utilized.
+- **[UI Gradient Background](https://uigradients.com/#Lawrencium)**
+- **[UI Gradient Container](https://uigradients.com/#SublimeVivid)**
+- **[Google Fonts Montserrat](https://fonts.google.com/specimen/Montserrat)**
+- **[Google Icons Check Box](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:check_box:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=checkbox&icon.size=28&icon.color=%23FFFFFF)**
+- **[Google Icons Outline Box](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:check_box_outline_blank:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=checkbox&icon.size=28&icon.color=%23FFFFFF)**
+- **[enter name of method/theory/etc](link)**
+- **[enter name of method/theory/etc](link)**
+- **[enter name of method/theory/etc](link)**
