@@ -32,7 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'accounts',  # Custom app for user accounts
-    'main_app',  
+    'aircraft',  # Custom app for aircraft management
+    'main_app',  # Main application for the project
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
