@@ -4,7 +4,14 @@
 {% load static %}
 <!-- Block content starts -->
 {% block content %}
-<h1>My aircraft hangar</h1>
-<p>Welcome to your aircraft hangar!</p>
-
+<div class="home-container">
+  <p class="text-center text-light text-sm">Your Hangar</p>
+  <h2 class="text-center text-light mt-4">Welcome, User</h2>
+  <p class="text-center text-light mt-4 text-sm">
+    Add, edit, or remove aircraft with one click; your hangar stays perfectly up to date.
+  </p>
+  <div class="mt-8 flex justify-content-center">
+    <a href="{% url 'create_aircraft' %}" class="btn btn-primary add-aircraft-link">Add Aircraft</a>
+  </div>
+</div>
 {% endblock %}
