@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import AircraftType, Category
+from .models import Aircraft, AircraftType, Category
 from .forms import AddAircraftForm
 
 def addView(request):
@@ -24,3 +24,19 @@ def addView(request):
             'categories': categories,
         }
         return render(request, 'aircraft/add.html', context)
+    
+def viewAircraft(request, pk):
+    # Fetch the aircraft entry by primary key (pk)
+    aircraft = Aircraft.objects.get(pk=pk)
+    context = {
+        'aircraft': aircraft
+    }
+    return render(request, 'aircraft/view.html', context)
+
+def deleteAircraft(request, pk):
+    # Fetch the aircraft entry by primary key (pk)
+    aircraft = Aircraft.objects.get(pk=pk)
+   
+    aircraft.delete()
+    return redirect('home')  # Redirect to the home page after deletion
+   
