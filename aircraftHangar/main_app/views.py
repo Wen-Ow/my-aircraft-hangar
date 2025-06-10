@@ -1,5 +1,10 @@
 from django.shortcuts import render
+from aircraft.models import Aircraft
 
 # Create your views here.
 def home(request):
-    return render(request, 'main_app/home.html')
+    aircrafts = Aircraft.objects.all()
+    context = {
+        'aircrafts': aircrafts
+    }
+    return render(request, 'main_app/home.html', context)
