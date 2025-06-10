@@ -13,5 +13,27 @@
   <div class="mt-8 flex justify-content-center">
     <a href="{% url 'create_aircraft' %}" class="btn btn-primary add-aircraft-link">Add Aircraft</a>
   </div>
+  <div class="aircrafts-container">
+    {% for aircraft in aircrafts %}
+    <div class="card">
+      <img src="{{ aircraft.image.url }}" alt="{{ aircraft.name }}" class="aircraft-image" />
+      <div class="card-body">
+        <div class="row mt-4">
+          <div class="">
+            <p class="aircraft-name bold my-2">{{ aircraft.model }}</p>
+            <p class="aircraft-details my-2">{{ aircraft.manufacturer }}</p>
+          </div>
+          <div class="align-self-center text-right">
+            <a href="{% url 'view_aircraft' aircraft.id %}" class="">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer flex justify-content-between align-items-center">
+        <p class="text-sm">Ready to fly</p>
+        <a class="text-sm btn btn-dark" href="{% url 'delete_aircraft' aircraft.id %}" class="">Delete</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
 {% endblock %}
