@@ -70,7 +70,7 @@ The app’s purpose is to provide a lightweight, user-friendly tool for organizi
 
 - Name: Wen Ow
 - Role: Full-Stack Developer & UX Designer
-- LinkedIn: [LinkedIn](add link)
+- [LinkedIn Account](www.linkedin.com/in/wenow)
 
 ## <a name="workscited"></a>Works Cited:
 
@@ -82,3 +82,7 @@ The app’s purpose is to provide a lightweight, user-friendly tool for organizi
 - **[enter name of method/theory/etc](link)**
 - **[enter name of method/theory/etc](link)**
 - **[enter name of method/theory/etc](link)**
+
+## Installed Packages
+
+- **[Pillow](https://pypi.org/project/pillow/)**
