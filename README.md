@@ -21,7 +21,6 @@ The app’s purpose is to provide a lightweight, user-friendly tool for organizi
 
 - [Technologies Used](#technologiesused)
 - [Features](#features)
-- [Design](#design)
 - [Project User Stories](#userstories)
 - [Project Next Steps](#nextsteps)
 - [About the Author](#author)
@@ -34,18 +33,20 @@ The app’s purpose is to provide a lightweight, user-friendly tool for organizi
 - PostgreSQL
 - HTML5
 - CSS3
-
-## <a name="design"></a>Design
-
-- Notable design details including what inspired the design.
+- Flexbox & CSS Grid
+- Heroku
+- Pillow
 
 ## <a name="features"></a>Features
 
--
--
--
--
--
+- User registration and secure login/logout
+- Session-based authentication and access control
+- User-specific aircraft visibility and data isolation
+- Create new aircraft entries
+- View a list of all aircraft in the user's collection
+- View detailed information for each aircraft
+- Edit aircraft entries from pre-filled forms
+- Delete aircraft entries from the collection
 
 ## <a name="userstories"></a>Project User Stories
 
@@ -60,11 +61,13 @@ The app’s purpose is to provide a lightweight, user-friendly tool for organizi
 
 ## <a name="nextsteps"></a>Project Next Steps
 
--
--
--
--
--
+- As a user, I want to add maintenance records to an aircraft so that I can track its service history.
+- As a user, I want to view all maintenance logs for an aircraft so that I can review its upkeep.
+- As a user, I want to edit or delete maintenance logs so that I can keep the records accurate.
+- As a user, I want to track service types, dates, and notes so that I have detailed maintenance information.
+- As a user, I want to assign roles like owner or mechanic so that others can help manage aircraft.
+- As a user, I want to share aircraft with other users so that we can collaborate on maintenance.
+- As a user, I want to filter or search my aircraft so that I can find specific entries easily.
 
 ## <a name="author"></a>About The Authors
 
@@ -74,14 +77,12 @@ The app’s purpose is to provide a lightweight, user-friendly tool for organizi
 
 ## <a name="workscited"></a>Works Cited:
 
+- General Assembly Course Materials
 - **[UI Gradient Background](https://uigradients.com/#Lawrencium)**
 - **[UI Gradient Container](https://uigradients.com/#SublimeVivid)**
 - **[Google Fonts Montserrat](https://fonts.google.com/specimen/Montserrat)**
 - **[Google Icons Check Box](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:check_box:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=checkbox&icon.size=28&icon.color=%23FFFFFF)**
 - **[Google Icons Outline Box](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:check_box_outline_blank:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=checkbox&icon.size=28&icon.color=%23FFFFFF)**
-- **[enter name of method/theory/etc](link)**
-- **[enter name of method/theory/etc](link)**
-- **[enter name of method/theory/etc](link)**
 
 ## Installed Packages
 
