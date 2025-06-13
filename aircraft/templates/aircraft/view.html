@@ -3,4 +3,34 @@
 <!-- Load static files -->
 {% load static %}
 <!-- Block content starts -->
-{% block content %} {% endblock %}
+{% block content %}
+<div class="details-container">
+  <div>
+    <a href="{% url 'home' %}" class="btn btn-primary mb-2">Back to My Hanger</a>
+  </div>
+  <div class="image-container mt-4">
+    <img src="{{ aircraft.image.url }}" alt="{{ aircraft.name }}" class="aircraft-image" />
+  </div>
+  <div class="aircraft-details mt-4">
+    <div class="flex justify-content-between items-center">
+      <p class="text-light font-xl mb-4 bold">Model - {{ aircraft.model }}</p>
+      <div class="btns-container">
+        <a href="{% url 'delete_aircraft' aircraft.id %}" class="btn btn-outline-primary">Delete Aircraft</a>
+        <a href="{% url 'edit_aircraft' aircraft.id %}" class="btn btn-primary">Edit Aircraft</a>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <p class="text-light text-sm my-4">Tail Number: {{ aircraft.tail_number }}</p>
+        <p class="text-light text-sm my-4">Manufacturer: {{ aircraft.manufacturer }}</p>
+        <p class="text-light text-sm my-4">Year: {{ aircraft.year }}</p>
+        <p class="text-light text-sm my-4">Notes: {{ aircraft.notes }}</p>
+      </div>
+      <div>
+        <p class="text-light text-sm my-4">Aircraft Type: {{ aircraft.aircraft_type }}</p>
+        <p class="text-light text-sm my-4">Category: {{ aircraft.category }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
