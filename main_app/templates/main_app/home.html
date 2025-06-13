@@ -10,6 +10,7 @@
   <p class="text-center text-light mt-4 text-sm">
     Add, edit, or remove aircraft with one click; your hangar stays perfectly up to date.
   </p>
+  {% if user.is_authenticated %}
   <div class="mt-8 flex justify-content-center">
     <a href="{% url 'create_aircraft' %}" class="btn btn-primary add-aircraft-link">Add Aircraft</a>
   </div>
@@ -35,5 +36,6 @@
     </div>
     {% endfor %}
   </div>
+  {% endif %}
 </div>
 {% endblock %}
