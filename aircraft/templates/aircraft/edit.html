@@ -1,0 +1,83 @@
+<!-- Using layout.html as layout file -->
+{% extends "layout.html" %}
+<!-- Load static files -->
+{% load static %}
+<!-- Block content starts -->
+{% block content %}
+<div class="add-aircraft-container">
+  <a href="{% url 'view_aircraft' aircraft.id %}" class="btn btn-primary">Back to Aircraft Details</a>
+  <form method="post" class="aircraft-form" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="flex justify-content-end">
+      <button type="submit" class="btn btn-primary mb-4">Save Changes</button>
+    </div>
+    <h2 class="text-light my-4">Aircraft Details</h2>
+    <div class="row">
+      <div class="form-group">
+        <label for="tail_number">Tail Number</label>
+        <input
+          type="text"
+          id="tail_number"
+          name="tail_number"
+          class="form-control"
+          value="{{ aircraft.tail_number }}"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="aircraft_type">Aircraft Type</label>
+        <select class="" id="aircraft_type" name="aircraft_type" required>
+          {% for aircraft_type in aircraft_types %}
+          <option {% if aircraft_type.id == aircraft.aircraft_type.id %}selected{% endif %}
+           value="{{ aircraft_type.id }}">{{ aircraft_type.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label for="model">Model</label>
+        <input type="text" id="model" name="model" class="form-control" value="{{ aircraft.model }}" required />
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select class="" id="category" name="category" required>
+          {% for category in categories %}
+          <option {% if category.id == aircraft.category.id %}selected{% endif %}
+           value="{{ category.id }}">{{ category.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label for="manufacturer">Manufacturer</label>
+        <input type="text" id="manufacturer" name="manufacturer" class="form-control" value="{{ aircraft.manufacturer }}" required />
+      </div>
+      <div class="form-group">
+        <label for="condition">Condition</label>
+        <select class="" id="condition" name="condition" required>
+          <option {% if aircraft.condition == "new" %}selected{% endif %} value="new">New</option>
+          <option {% if aircraft.condition == "used" %}selected{% endif %} value="used">Used</option>
+          <option {% if aircraft.condition == "damaged" %}selected{% endif %} value="damaged">Damaged</option>
+          <option {% if aircraft.condition == "old" %}selected{% endif %} value="old">Old</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label for="year">Year</label>
+        <input type="text" id="year" name="year" class="form-control" value="{{ aircraft.year }}" required />
+      </div>
+      <div class="form-group">
+        <label for="condition">Image</label>
+        <input type="file" id="image" name="image" class="form-control" accept="image/*" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="condition">Notes</label>
+      <textarea id="notes" name="notes" class="form-control" rows="4" placeholder="Type notes here...">{{ aircraft.notes }}</textarea>
+    </div>
+  </form>
+</div>
+{% endblock %}

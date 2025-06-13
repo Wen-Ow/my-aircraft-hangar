@@ -7,6 +7,7 @@ urlpatterns = [
     # Create Aircraft Route
     path('create/', views.addView, name='create_aircraft'),
     path('view/<int:pk>/', views.viewAircraft, name='view_aircraft'),
+    path('edit/<int:pk>/', views.editAircraft, name='edit_aircraft'),
     path('delete/<int:pk>/', views.deleteAircraft, name='delete_aircraft'),
 ]
 
