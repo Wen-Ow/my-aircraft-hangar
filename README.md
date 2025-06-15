@@ -1,8 +1,26 @@
 # My Aircraft Hangar
 
-#### Caption
+#### Screenshots of the Application
 
-<img src="" alt=""/>
+_Registration Page_
+
+![Snapshot of the Registration](/main_app/static/main_app/images/Screenshot%20-%20Register.png)
+
+_Login Page_
+
+![Snapshot of the Login](/main_app/static/main_app/images/Screenshot%20-%20Login.png)
+
+_Empty State_
+
+![Snapshot of the Empty State](/main_app/static/main_app/images/Screenshot%20-%20Empty%20Dashboard%20-%20My%20Aircraft%20Hangar.png)
+
+_Dashboard Page_
+
+![Snapshot of the Dashboard](/main_app/static/main_app/images/Screenshot%20-%20Home%20-%20My%20Aircraft%20Hangar.png)
+
+_Aircraft Details Page_
+
+![Snapshot of the Aircraft Details](/main_app/static/main_app/images/Screenshot%20-%20Details%20page.png)
 
 ## Description
 
@@ -14,8 +32,9 @@ The app’s purpose is to provide a lightweight, user-friendly tool for organizi
 
 - **Project planning** can be found [here](https://trello.com/invite/b/683ca64d8ace926e380fb360/ATTI8fb9c546122dd2e5716b7b6439d2bd2c5677A9C2/my-aircraft-hangar).
 - **High-Fidelity Mockups** can be found [here](https://www.figma.com/design/SUZEZHrFOItfP1hjO7fzrN/Unit-4-Project?node-id=0-1&t=ehbhP3mry9CZFSbh-1).
+- **Entity-Relationship Diagram** can be found [here](https://docs.google.com/spreadsheets/d/1udoX-A9-1F9_hwQFhuXJKyuZu777vzD7yh5cI196wPY/edit?usp=sharing).
 - **GitHub repo** can be found [here](https://github.com/Wen-Ow/my-aircraft-hangar).
-- **Deployed project** link can be found [here](add link).
+- **Deployed project** can be found [here](https://my-aircraft-hangar-app-815095a26a77.herokuapp.com/accounts/register/).
 
 ## Table of Contents
 
@@ -73,7 +92,7 @@ The app’s purpose is to provide a lightweight, user-friendly tool for organizi
 
 - Name: Wen Ow
 - Role: Full-Stack Developer & UX Designer
-- [LinkedIn Account](www.linkedin.com/in/wenow)
+- LinkedIn Account [here](https://www.linkedin.com/in/wenow).
 
 ## <a name="workscited"></a>Works Cited:
 
