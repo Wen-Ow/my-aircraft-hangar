@@ -46,7 +46,8 @@ def editAircraft(request, pk):
         form = AddAircraftForm(request.POST, request.FILES, instance=aircraft)
         if form.is_valid():
             form.save()  # Save the updated aircraft entry to the database
-            return redirect('home')  # Redirect to the home page after successful update
+            return redirect('view_aircraft', pk=aircraft.pk)  # Redirect to the view page of the updated aircraft
+
     else:
         # Pre-fill the form with existing data
         form = AddAircraftForm(instance=aircraft)

@@ -3,8 +3,8 @@
     <a href="{% url 'home' %}">My Aircraft Hangar</a>
   </div>
   <ul class="nav-items">
-    <li class="nav-item"><a href="{% url 'home' %}">Home</a></li>
     {% if user.is_authenticated %}
+    <li class="nav-item"><a href="{% url 'home' %}">Home</a></li>
     <li class="nav-item"><a href="{% url 'create_aircraft' %}">Add Aircraft</a></li>
     <li class="nav-item"><a href="{% url 'logout' %}">Logout</a></li>
     {% else %}

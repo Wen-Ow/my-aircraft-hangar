@@ -10,3 +10,8 @@ urlpatterns = [
     # Logout Route
     path('logout/', views.logoutView, name='logout'),
 ]
+
+# Add Static Files URL
+urlpatterns += [
+    path('static/', include('django.contrib.staticfiles.urls')),
+]

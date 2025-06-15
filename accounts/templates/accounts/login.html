@@ -6,8 +6,9 @@
 {% block content %}
 <div class="form-container">
   <div class="form-content">
-    <h2 class="">Welcome Back</h2>
-    <p>Please login to continue</p>
+    <h2 class="ml-8">Welcome Back</h2>
+    <p class="ml-8">Please login to continue</p>
+    <img src="{% static 'accounts/images/aircraft-icn.png' %}" alt="Aircraft icon image" />
   </div>
   <form method="post" class="form">
     {% csrf_token %}
